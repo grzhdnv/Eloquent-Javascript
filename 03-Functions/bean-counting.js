@@ -10,3 +10,31 @@
 // it takes a second argument that indicates the character that is to be counted
 // (rather than counting only uppercase “B” characters). Rewrite countBs to
 // make use of this new function.
+
+function countBs(str) {
+  count = 0;
+  for (var i = 0; i < str.length; i++) {
+    if (str[i] === "B") {
+      count++;
+    }
+  }
+  return count;
+}
+
+function countChar(str, char) {
+  count = 0;
+  for (var i = 0; i < str.length; i++) {
+    if (str[i] === char) {
+      count++;
+    }
+  }
+  return count;
+}
+
+str = `Next, write a function called countChar that behaves like countBs, except
+it takes a second argument that indicates the character that is to be counted
+(rather than counting only uppercase “B” characters). Rewrite countBs to
+make use of this new function.`;
+
+console.log(countBs(str));
+console.log(countBs(str, "w"));
