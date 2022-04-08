@@ -13,3 +13,6 @@
 // console.log(abc.length);
 // → 3
 
+for (let line = "#"; line.length < 8; line += "#") {
+  console.log(line);
+}
